@@ -4,33 +4,6 @@ var participants = [
         moviesWatched : [
             {
                 name: 'Act Naturually'
-            },
-            {
-                name: 'pornhub'
-            }
-        ]
-    },
-    {
-        name : 'Rondell Ivey',
-        moviesWatched : [
-            {
-                name: 'Act Naturually'
-            }
-        ]
-    },
-    {
-        name : 'Kayla Howes',
-        moviesWatched : [
-            {
-                name : 'Act Naturually'
-            }
-        ]
-    },
-    {
-        name : 'Peyton Gerhard',
-        moviesWatched : [
-            {
-                name : 'Act Naturually'
             }
         ]
     }
