@@ -7,22 +7,9 @@ var movies = [
         link: 'https://tubitv.com/movies/550794/act-naturally',
         participants: [
             {
-                firstName: 'Rondell',
-                lastName: 'Ivey'
-            },
-            {
-                firstName: 'Kayla',
-                lastName: 'Howes'
-            },
-            {
                 firstName: 'Sheldon',
                 lastName: 'Gelinas',
                 special: 'Host'
-            },
-            {
-                firstName: 'Peyton',
-                lastName: 'Gerhard',
-                special: 'Movie Picker'
             }
         ]
     }
