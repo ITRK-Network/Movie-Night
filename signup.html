@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Movie Picker</title>
+    <script src="https://kit.fontawesome.com/2c4b435336.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightshade.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./">Movie Night 🍿</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./">Home 🏠</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/signup.html">Sign Up ✏️</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-secondary" type="submit" id='darkmode'><i class='fas fa-moon'></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class='container' style="margin-top: 75px; margin-bottom: 25px;">
+          <h1>Sign up to watch a movie with us!</h1>
+          Interested? fill out the form below.<br><br>
+          <hr>
+          <form>
+            Please use the same name you use on Facebook, so we can inform you when the movie about to begin, otherwise you might miss out.<br><br>
+            <label for='firstName'>
+              First Name <span class='text-danger'>*</span><br>
+              <input id='firstName' class='form-control' type="text" placeholder="John">
+            </label>
+            <br><br>
+            <label for='lastName'>
+              Last Name <span class='text-danger'>*</span><br>
+              <input id='lastName' class='form-control' type="text" placeholder="Doe">
+            </label>
+            <br><br>
+            <label for='movieNight'>
+              Choose a movie night <span class='text-danger'>*</span><br>
+              <select class='form-select' id='movieNight'>
+                <option selected>No Movies Scheduled</option>
+              </select>
+            </label>
+            <br><br>
+            <label for='confirmation'>
+              Are you a member of <span class='text-muted'>Zucchini Patrol</span> Messenger Group?<br>
+              <select class='form-select' id='confirmation'>
+                <option value='yes'>Yes I am</option>
+                <option value='no' selected>No I ain't</option>
+              </select>
+            </label>
+            <br><br>
+            <label for='other'>
+              Do you have a Secret Movie Night Code?<br>
+              If so, enter it below.<br>
+              <input id='other' type='text' class='form-control'>
+            </label>
+            <br><br>
+            <button class='btn btn-secondary' type="button" onclick='signupSubmit()' disabled>Sign up</button>
+          </form>
+  </div>
+    <script src='script.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/js/darkmode.min.js"></script>
+    <script>
+      document.querySelector("#darkmode").onclick = function(e){
+        darkmode.toggleDarkMode();
+      }
+    </script>
+
+</body>
+
+</html>
